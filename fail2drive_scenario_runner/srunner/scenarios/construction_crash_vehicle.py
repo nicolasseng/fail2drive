@@ -416,7 +416,7 @@ class CustomConstructionObstacleTwoWays(CustomConstructionObstacle):
 
         return root
 
-class AlteredConstructionObstacle(CustomConstructionObstacle):
+class PermutedConstructionObstacle(CustomConstructionObstacle):
     """
     Variation of ConstructionObstacle where the obstacle is in the opposite lane
     """
@@ -493,7 +493,7 @@ class AlteredConstructionObstacle(CustomConstructionObstacle):
         self.first = self._construction_transforms[0][0]
         self.last = self._construction_transforms[-1][0]
 
-class AlteredConstructionObstacleTwoWays(CustomConstructionObstacleTwoWays):
+class PermutedConstructionObstacleTwoWays(CustomConstructionObstacleTwoWays):
     """
     Variation of ConstructionObstacle where the obstacle is in the opposite lane
     """

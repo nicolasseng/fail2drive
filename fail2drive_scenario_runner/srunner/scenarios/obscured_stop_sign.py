@@ -16,7 +16,7 @@ def get_value_parameter(config, name, p_type, default):
     else:
         return default
 
-class OccludedStopSign(BasicScenario):
+class ObscuredStopSign(BasicScenario):
     """
     Vehicle turning left at junction scenario, with actors coming in the opposite direction.
     The ego has to react to them, safely crossing the opposite lane

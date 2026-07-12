@@ -15,7 +15,7 @@ def get_value_parameter(config, name, p_type, default):
     else:
         return default
 
-class ImageOnProp(BasicScenario):
+class ImageOnObject(BasicScenario):
     """
     Vehicle turning left at junction scenario, with actors coming in the opposite direction.
     The ego has to react to them, safely crossing the opposite lane
@@ -63,7 +63,7 @@ class ImageOnProp(BasicScenario):
 
         self.props = []
 
-        super().__init__("ImageOnProp",
+        super().__init__("ImageOnObject",
                          ego_vehicles,
                          config,
                          world,
