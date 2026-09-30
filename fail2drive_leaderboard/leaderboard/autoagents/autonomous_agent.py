@@ -134,13 +134,13 @@ class AutonomousAgent(object):
         self._global_plan = [global_plan_gps[x] for x in ds_ids]
 
     def get_hero(self):
-            hero_actor = None
-            from srunner.scenariomanager.carla_data_provider import CarlaDataProvider
-            for actor in CarlaDataProvider.get_world().get_actors():
-                if 'role_name' in actor.attributes and actor.attributes['role_name'] == 'hero':
-                    hero_actor = actor
-                    break
-            self.hero_actor = hero_actor
+        hero_actor = None
+        from srunner.scenariomanager.carla_data_provider import CarlaDataProvider
+        for actor in CarlaDataProvider.get_world().get_actors():
+            if 'role_name' in actor.attributes and actor.attributes['role_name'] == 'hero':
+                hero_actor = actor
+                break
+        self.hero_actor = hero_actor
         
     def get_metric_info(self):
         
